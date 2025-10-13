@@ -1,22 +1,55 @@
 @startuml
-'https://plantuml.com/use-case-diagram
+!theme plain
 
-:Main Admin: as Admin
-(Use the application) as (Use)
+left to right direction
 
-User -> (Start)
-User --> (Use)
+actor "Медработник" as Doctor
+actor "Пациент" as Patient
 
-Admin ---> (Use)
+rectangle "Система учета пациентов и лекарств" {
+  ' Медработник
+  usecase "Добавить отчет о всех пациентах" as UC1
+  usecase "Войти в систему учета" as UC2
+  usecase "Добавить пациента" as UC3
+  usecase "Создать новое назначение" as UC4
 
-note right of Admin : This is an example.
+  ' Include для медработника
+  usecase "Добавить индивидуальные особенности пациента" as UC5
+  usecase "Добавить историю болезни" as UC6
+  usecase "Назначить лекарственный препарат" as UC7
+  usecase "Назначить длительность приема, дозировку, время приема" as UC8
 
-note right of (Use)
-A note can also
-be on several lines
-end note
+  ' Пациент
+  usecase "Посмотреть текущие назначения" as UC9
+  usecase "Заполнить данные о состоянии здоровья" as UC10
+  usecase "Подтвердить прием по расписанию" as UC11
 
-note "This note is connected\nto several objects." as N2
-(Start) .. N2
-N2 .. (Use)
+  ' Include/Extend для пациента
+  usecase "Отметить самочувствие после приема" as UC12
+  usecase "Указать пропуск лекарства и причину" as UC13
+  usecase "Отметить принятый препарат" as UC14
+}
+
+' Связи акторов с use cases
+Doctor --> UC1
+Doctor --> UC2
+Doctor --> UC3
+Doctor --> UC4
+
+Patient --> UC2
+Patient --> UC9
+Patient --> UC10
+Patient --> UC11
+
+' Include отношения
+UC3 ..> UC5 : <<include>>
+UC3 ..> UC6 : <<include>>
+UC4 ..> UC7 : <<include>>
+UC7 ..> UC8 : <<include>>
+UC10 ..> UC12 : <<include>>
+
+' Extend отношения
+UC11 <.. UC13 : <<extend>>
+UC11 <.. UC14 : <<extend>>
+
 @enduml
