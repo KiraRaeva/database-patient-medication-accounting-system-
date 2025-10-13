@@ -103,10 +103,25 @@ cd database-patient-medication-accounting-system
 # Запуск программы
 python src/main.py
 
-project/
-├── src/           # Исходный код
-├── docs/          # Документация
-├── tests/         # Тесты
-└── README.md      # Этот файл
- 
+markdown
+## Структура проекта
+Project1/
+├── docs/
+│ └── diagrams/
+│ ├── blockdiagrams.puml
+│ ├── blockdiagrams2.puml
+│ ├── blockdiagrams2.png
+│ ├── blockdiagrams.png
+│ ├── init.py
+│ ├── UseCase1.png
+│ └── UseCase1.puml
+├── src/
+│ ├── main.py
+│ 
+├── tests/
+│ ├── init.py
+│ ├── test1/
+│ └── test_main.py
+├── README.md
+└── requirements.txt
         
