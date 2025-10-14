@@ -31,15 +31,15 @@ rectangle "Система учета пациентов и лекарств" {
 }
 
 ' Связи акторов с use cases
-Doctor --> UC1
-Doctor --> UC2
-Doctor --> UC3
-Doctor --> UC4
+Doctor -- UC1
+Doctor -- UC2
+Doctor -- UC3
+Doctor -- UC4
 
-Patient --> UC2
-Patient --> UC9
-Patient --> UC10
-Patient --> UC11
+Patient -- UC2
+Patient -- UC9
+Patient -- UC10
+Patient -- UC11
 
 ' Include отношения
 UC3 ..> UC5 : <<include>>
