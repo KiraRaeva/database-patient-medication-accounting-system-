@@ -91,37 +91,5 @@
 - Git
 - Usecase Diagrams
 
-## Запуск проекта
 
-```bash
-# Клонирование репозитория
-git clone https://github.com/KiraRaeva/database-patient-medication-accounting-system-.git
 
-# Переход в директорию проекта
-cd database-patient-medication-accounting-system
-
-# Запуск программы
-python src/main.py
-
-markdown
-## Структура проекта
-Project1/
-├── docs/
-│ └── diagrams/
-│ ├── blockdiagrams.puml
-│ ├── blockdiagrams2.puml
-│ ├── blockdiagrams2.png
-│ ├── blockdiagrams.png
-│ ├── init.py
-│ ├── UseCase1.png
-│ └── UseCase1.puml
-├── src/
-│ ├── main.py
-│ 
-├── tests/
-│ ├── init.py
-│ ├── test1/
-│ └── test_main.py
-├── README.md
-└── requirements.txt
-![диаграммы1.PNG](docs/diagrams/%D0%B4%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B1.PNG)
