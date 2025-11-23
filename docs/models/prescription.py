@@ -1,6 +1,6 @@
 from typing import List, Optional, Tuple
 
-from database import DatabaseManager
+from docs.database import DatabaseManager
 
 
 
