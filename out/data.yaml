@@ -1,0 +1,71 @@
+- contraindications: Аллергия на пенициллин
+  date_of_birth: '1985-05-15'
+  first_name: Алексей
+  individual_characteristics: 'Симптомы: высокая температура 38.5°C, головная боль,
+    боль в горле'
+  prescriptions:
+  - dosage: 1 пастилка
+    end_time: '2025-01-29 22:00:00'
+    medical_prescription_ID: 3
+    medicine:
+      dosage: 1 пастилка каждые 2-3 часа при боли в горле
+      medicine_ID: 4
+      nametag: Стрепсилс
+    start_time: '2025-01-20 09:00:00'
+  - dosage: 1 таблетка
+    end_time: '2025-01-27 20:00:00'
+    medical_prescription_ID: 1
+    medicine:
+      dosage: 500 мг 3 раза в день после еды
+      medicine_ID: 1
+      nametag: Парацетамол
+    start_time: '2025-01-20 08:00:00'
+  - dosage: 1 таблетка
+    end_time: '2025-01-25 12:00:00'
+    medical_prescription_ID: 2
+    medicine:
+      dosage: 400 мг 2 раза в день при температуре выше 38°C
+      medicine_ID: 2
+      nametag: Ибупрофен
+    start_time: '2025-01-20 12:00:00'
+  second_name: Смирнов
+  user_ID: 1
+- contraindications: Беременность
+  date_of_birth: '1990-08-20'
+  first_name: Мария
+  individual_characteristics: 'Симптомы: температура 37.8°C, насморк, кашель, слабость'
+  prescriptions:
+  - dosage: 1 пакетик
+    end_time: '2025-01-26 21:00:00'
+    medical_prescription_ID: 5
+    medicine:
+      dosage: 1 пакетик 2-3 раза в день при симптомах простуды
+      medicine_ID: 3
+      nametag: ТераФлю
+    start_time: '2025-01-19 09:00:00'
+  - dosage: 1 таблетка
+    end_time: '2025-02-02 07:00:00'
+    medical_prescription_ID: 8
+    medicine:
+      dosage: 500 мг 1 раз в день для иммунитета
+      medicine_ID: 7
+      nametag: Аскорбиновая кислота
+    start_time: '2025-01-19 07:00:00'
+  - dosage: 1 таблетка
+    end_time: '2025-01-28 20:00:00'
+    medical_prescription_ID: 7
+    medicine:
+      dosage: 1 таблетка 3 раза в день от кашля
+      medicine_ID: 6
+      nametag: Амбробене
+    start_time: '2025-01-19 10:00:00'
+  - dosage: 2 капли
+    end_time: '2025-01-29 22:00:00'
+    medical_prescription_ID: 6
+    medicine:
+      dosage: 2 капли в каждый носовой ход 3 раза в день
+      medicine_ID: 5
+      nametag: Називин
+    start_time: '2025-01-19 08:00:00'
+  second_name: Иванова
+  user_ID: 2

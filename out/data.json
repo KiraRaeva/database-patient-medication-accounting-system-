@@ -1,0 +1,99 @@
+[
+  {
+    "user_ID": 1,
+    "first_name": "Алексей",
+    "second_name": "Смирнов",
+    "date_of_birth": "1985-05-15",
+    "contraindications": "Аллергия на пенициллин",
+    "individual_characteristics": "Симптомы: высокая температура 38.5°C, головная боль, боль в горле",
+    "prescriptions": [
+      {
+        "medical_prescription_ID": 3,
+        "dosage": "1 пастилка",
+        "start_time": "2025-01-20 09:00:00",
+        "end_time": "2025-01-29 22:00:00",
+        "medicine": {
+          "medicine_ID": 4,
+          "nametag": "Стрепсилс",
+          "dosage": "1 пастилка каждые 2-3 часа при боли в горле"
+        }
+      },
+      {
+        "medical_prescription_ID": 1,
+        "dosage": "1 таблетка",
+        "start_time": "2025-01-20 08:00:00",
+        "end_time": "2025-01-27 20:00:00",
+        "medicine": {
+          "medicine_ID": 1,
+          "nametag": "Парацетамол",
+          "dosage": "500 мг 3 раза в день после еды"
+        }
+      },
+      {
+        "medical_prescription_ID": 2,
+        "dosage": "1 таблетка",
+        "start_time": "2025-01-20 12:00:00",
+        "end_time": "2025-01-25 12:00:00",
+        "medicine": {
+          "medicine_ID": 2,
+          "nametag": "Ибупрофен",
+          "dosage": "400 мг 2 раза в день при температуре выше 38°C"
+        }
+      }
+    ]
+  },
+  {
+    "user_ID": 2,
+    "first_name": "Мария",
+    "second_name": "Иванова",
+    "date_of_birth": "1990-08-20",
+    "contraindications": "Беременность",
+    "individual_characteristics": "Симптомы: температура 37.8°C, насморк, кашель, слабость",
+    "prescriptions": [
+      {
+        "medical_prescription_ID": 5,
+        "dosage": "1 пакетик",
+        "start_time": "2025-01-19 09:00:00",
+        "end_time": "2025-01-26 21:00:00",
+        "medicine": {
+          "medicine_ID": 3,
+          "nametag": "ТераФлю",
+          "dosage": "1 пакетик 2-3 раза в день при симптомах простуды"
+        }
+      },
+      {
+        "medical_prescription_ID": 8,
+        "dosage": "1 таблетка",
+        "start_time": "2025-01-19 07:00:00",
+        "end_time": "2025-02-02 07:00:00",
+        "medicine": {
+          "medicine_ID": 7,
+          "nametag": "Аскорбиновая кислота",
+          "dosage": "500 мг 1 раз в день для иммунитета"
+        }
+      },
+      {
+        "medical_prescription_ID": 7,
+        "dosage": "1 таблетка",
+        "start_time": "2025-01-19 10:00:00",
+        "end_time": "2025-01-28 20:00:00",
+        "medicine": {
+          "medicine_ID": 6,
+          "nametag": "Амбробене",
+          "dosage": "1 таблетка 3 раза в день от кашля"
+        }
+      },
+      {
+        "medical_prescription_ID": 6,
+        "dosage": "2 капли",
+        "start_time": "2025-01-19 08:00:00",
+        "end_time": "2025-01-29 22:00:00",
+        "medicine": {
+          "medicine_ID": 5,
+          "nametag": "Називин",
+          "dosage": "2 капли в каждый носовой ход 3 раза в день"
+        }
+      }
+    ]
+  }
+]
