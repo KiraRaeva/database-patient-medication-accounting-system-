@@ -8,48 +8,34 @@ actor "Пациент" as Patient
 
 rectangle "Система учета пациентов и лекарств" {
   ' Медработник
-  usecase "Добавить отчет о всех пациентах" as UC1
-  usecase "Войти в систему учета" as UC2
-  usecase "Добавить пациента" as UC3
-  usecase "Создать новое назначение" as UC4
-
-  ' Include для медработника
+  usecase "Список всех пациентов" as UC1
+  usecase "Просмотр назначений пациентов" as UC2
+  usecase "Изменить назначение" as UC3
+  usecase "Добавить историю болезни пациента" as UC4
   usecase "Добавить индивидуальные особенности пациента" as UC5
-  usecase "Добавить историю болезни" as UC6
-  usecase "Назначить лекарственный препарат" as UC7
-  usecase "Назначить длительность приема, дозировку, время приема" as UC8
+  usecase "Создать новое назначение" as UC6
+  usecase "Просмотр статуса приема препаратов" as UC7
+  usecase "Просмотр медицинской карты пациента" as UC8
 
   ' Пациент
-  usecase "Посмотреть текущие назначения" as UC9
-  usecase "Заполнить данные о состоянии здоровья" as UC10
-  usecase "Подтвердить прием по расписанию" as UC11
-
-  ' Include/Extend для пациента
-  usecase "Отметить самочувствие после приема" as UC12
-  usecase "Указать пропуск лекарства и причину" as UC13
-  usecase "Отметить принятый препарат" as UC14
+  usecase "Отметить самочувствие после препарата" as UC9
+  usecase "Подтвердить прием препаратов" as UC10
+  usecase "Посмотреть назначенные препараты" as UC11
 }
 
-' Связи акторов с use cases
-Doctor -- UC1
-Doctor -- UC2
-Doctor -- UC3
-Doctor -- UC4
+' Связи медработника с его функциями
+Doctor --> UC1
+Doctor --> UC2
+Doctor --> UC3
+Doctor --> UC4
+Doctor --> UC5
+Doctor --> UC6
+Doctor --> UC7
+Doctor --> UC8
 
-Patient -- UC2
-Patient -- UC9
-Patient -- UC10
-Patient -- UC11
-
-' Include отношения
-UC3 ..> UC5 : <<include>>
-UC3 ..> UC6 : <<include>>
-UC4 ..> UC7 : <<include>>
-UC7 ..> UC8 : <<include>>
-UC10 ..> UC12 : <<include>>
-
-' Extend отношения
-UC11 <.. UC13 : <<extend>>
-UC11 <.. UC14 : <<extend>>
+' Связи пациента с его функциями
+Patient --> UC9
+Patient --> UC10
+Patient --> UC11
 
 @enduml
